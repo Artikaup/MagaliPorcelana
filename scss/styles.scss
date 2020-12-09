@@ -97,10 +97,11 @@ h2{
 .navbar-nav{
     background-color: $fondo;
     font-size: 20px;
-    
-    
+     
 }
-
+.dropdown-menu{
+    background-color: $fondo;
+}
 .text__nos{
     color: black;
     text-align: center;
