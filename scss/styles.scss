@@ -1,5 +1,6 @@
 @import "colores";
-@import url('https://fonts.googleapis.com/css2? family = Rouge + Script & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 $ancho: 800px;
 $parrafo: derechos;
@@ -16,22 +17,49 @@ $parrafo: derechos;
 .bg-light {
     background-image: linear-gradient(to top, $fondo, white);
     
+    
 }
 
 body{
     background-color:$fondo;
      
     h1{
-    background-color: $fondo;
     font-family: 'Rouge Script', cursive;
-    font-size: 40px;
+    font-size: 80px;
     color: white;
     text-align: center;
-        
+    margin: 0px;
+    @extend.text__nos--reseña;    
 }
+}
+h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    text-align: center;
+    @extend.text__nos--reseña; 
+}
+.Carru{
+    margin: 0px;
+    padding: 0px;
+}
+.carousel-item{
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    
+}
+.fondo{
+    background-image: url(../img/fondo.png);
+    
+}
+.fondoIndex{
+    padding: 0px;
+    margin: 0px;
 }
 .body__nos{
-    background-image: url("../img/fondo.jpg");
+    background-image: url(../img/fondo.png);
+    margin: 5px;
+    padding: 5px;
     
 }
 .body__nos--title{
@@ -53,23 +81,28 @@ body{
     background-color: $letras;
     animation-duration: 2s;
     animation-name: aparecer;
-    width: ($ancho/2)+100;
+   
     
 }
 .body__serv--text{
         color: white;
         font-size: 15px;
         text-align: center;
+        @extend.text__nos--reseña;
 }
-
+.navbar{
+    margin: 5px;
+    padding: 5px;
+}
 .navbar-nav{
     background-color: $fondo;
     font-size: 20px;
     
+    
 }
 
 .text__nos{
-    color: white;
+    color: black;
     text-align: center;
     font-size: 20px;
 }
@@ -85,7 +118,7 @@ footer{
     background-color: $fondo;
     font-family: 'Rouge Script',cursive;
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
     p{
     @if $parrafo==derechos{
         text-align: center;
