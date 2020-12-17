@@ -9,7 +9,9 @@
   background-image: linear-gradient(to top, #9BCBC7, white); }
 
 body {
-  background-color: #9BCBC7; }
+  background-color: #9BCBC7;
+  margin: 0px;
+  padding: 0px; }
   body h1 {
     font-family: 'Rouge Script', cursive;
     font-size: 80px;
@@ -33,10 +35,6 @@ h2 {
 
 .fondo {
   background-image: url("../img/fondo.png"); }
-
-.fondoIndex {
-  padding: 0px;
-  margin: 0px; }
 
 .body__nos {
   background-image: url("../img/fondo.png");
@@ -106,3 +104,40 @@ footer {
 
 .card-text {
   text-align: justify; }
+
+#contacto {
+  display: flex;
+  justify-content: space-around; }
+
+#contacto img {
+  width: 400px;
+  height: auto; }
+
+#contacto form {
+  display: flex;
+  flex-direction: column; }
+
+#contacto > div, #contacto > form {
+  flex-basis: 20px; }
+
+#contacto form input,
+#contacto form textarea {
+  margin-bottom: 10px;
+  max-width: 200px; }
+
+#contacto form {
+  background: #9BCBC7;
+  border: 0px;
+  margin-top: 0px;
+  padding: 3px;
+  margin: 0px; }
+
+#contacto form a {
+  text-align: center;
+  color: white;
+  border-radius: 20px; }
+
+#contacto form a:hover {
+  color: teal;
+  list-style: none;
+  text-decoration: none; }
