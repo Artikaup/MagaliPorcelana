@@ -67,6 +67,13 @@ h2 {
   padding: 0px;
   margin: 0px; }
 
+@media (max-width: 768px) {
+  .barra {
+    width: auto;
+    color: #9BCBC7; }
+  h1, h2 {
+    font-size: 16px; } }
+
 .navbar {
   margin: 0px;
   padding: 0px; }
