@@ -17,8 +17,55 @@ $parrafo: derechos;
 
 .bg-light {
     background-image: linear-gradient(to top, $fondo, white);
+     
+}
+
+@media (max-width:768px){
+     h1{
+        font-size: 22px;
+    }
+    .text__nos--reseña{
+        font-size: 15px;
+    }
+    .carru{
+        width: 50px;
+        height: auto;
+    }
+}
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    margin: 0px;
+    padding: 0px;
     
+}
+nav.navbar.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+.navbar-nav{
+    margin: 0px;
+    padding: 0px;
+    background-color: $fondo;
+    font-size: 20px;
+    
+}
+.nav-item{
+    padding: 0px;
+    align-items: center;
+}
+.redes{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+.dropdown-menu{
+    background-color: $fondo;
 }
 
 body{
@@ -42,8 +89,8 @@ h2{
     @extend.text__nos--reseña; 
 }
 .Carru{
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
+    padding: 5px;
 }
 .carousel-item{
     width: 800px;
@@ -93,25 +140,11 @@ h2{
 .barra{
     padding: 0px;
     margin: 0px;
-    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@media (max-width:768px){
-     h1,h2{
-        font-size: 16px;
-    }
-}
-.navbar{
-    margin: 0px;
-    padding: 0px;
-}
-.navbar-nav{
-    background-color: $fondo;
-    font-size: 20px;
-     
-}
-.dropdown-menu{
-    background-color: $fondo;
-}
+
 .text__nos{
     color: black;
     text-align: center;
