@@ -14,6 +14,7 @@ $parrafo: derechos;
     margin: 0%;
     padding: 0%;
 }
+
 .bg-light {
     background-image: linear-gradient(to top, $fondo, white);
     
@@ -94,8 +95,8 @@ h2{
     margin: 0px;
 }
 .navbar{
-    margin: 5px;
-    padding: 5px;
+    margin: 0px;
+    padding: 0px;
 }
 .navbar-nav{
     background-color: $fondo;
