@@ -20,7 +20,15 @@ $parrafo: derechos;
      
 }
 
-@media (max-width:768px){
+@media (max-width:480px){
+    
+    nav.navbar.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+   
      h1{
         font-size: 22px;
     }
@@ -36,18 +44,17 @@ $parrafo: derechos;
     margin: 0px;
     padding: 0px;
 }
-
+nav.navbar.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .navbar{
     margin: 0px;
     padding: 0px;
     
 }
-nav.navbar.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+
 .navbar-nav{
     margin: 0px;
     padding: 0px;
@@ -70,8 +77,8 @@ nav.navbar.navbar{
 
 body{
     background-color:$fondo;
-    margin: 0px;
-    padding: 0px;
+    margin: 5px;
+    padding: 5px;
      
     h1{
     font-family: 'Rouge Script', cursive;
@@ -157,8 +164,16 @@ h2{
 .titulo__nos{
    @extend.text__nos--reseña;
 }
+.container{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
 
 footer{
+    margin: 5px;
+    padding: 5px;
     background-color: $fondo;
     font-family: 'Rouge Script',cursive;
     text-align: center;
@@ -174,10 +189,13 @@ footer{
 }
 }
 .pie__nos{
-    
+    margin: 5px;
+    padding: 5px;
     background-image: linear-gradient(to top, $fondo, white);
 }
 .pie__nos--text{
+    margin: 5px;
+    padding: 5px;
     color: $letras;
 }
 .card-text{

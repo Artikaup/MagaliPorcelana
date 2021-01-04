@@ -8,7 +8,11 @@
 .bg-light {
   background-image: linear-gradient(to top, #9BCBC7, white); }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  nav.navbar.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   h1 {
     font-size: 22px; }
   .text__nos--reseña, body h1, h2, .body__serv--text, .titulo__nos {
@@ -21,14 +25,14 @@
   margin: 0px;
   padding: 0px; }
 
+nav.navbar.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
 .navbar {
   margin: 0px;
   padding: 0px; }
-
-nav.navbar.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 .navbar-nav {
   margin: 0px;
@@ -50,8 +54,8 @@ nav.navbar.navbar {
 
 body {
   background-color: #9BCBC7;
-  margin: 0px;
-  padding: 0px; }
+  margin: 5px;
+  padding: 5px; }
   body h1 {
     font-family: 'Rouge Script', cursive;
     font-size: 80px;
@@ -119,7 +123,15 @@ h2 {
   animation-duration: 4s;
   animation-name: aparecer; }
 
+.container {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center; }
+
 footer {
+  margin: 5px;
+  padding: 5px;
   background-color: #9BCBC7;
   font-family: 'Rouge Script',cursive;
   text-align: center;
@@ -129,9 +141,13 @@ footer {
     color: teal; }
 
 .pie__nos {
+  margin: 5px;
+  padding: 5px;
   background-image: linear-gradient(to top, #9BCBC7, white); }
 
 .pie__nos--text {
+  margin: 5px;
+  padding: 5px;
   color: teal; }
 
 .card-text {
